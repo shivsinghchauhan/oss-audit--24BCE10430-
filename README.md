@@ -1,15 +1,43 @@
-README: Open Source Software AuditThis repository contains the practical component of the Open Source Software (OSS) Capstone Project for the OSS NGMC Course.
-It focuses on a structured audit of a specific open-source project and the demonstration of Linux automation skills through shell scripting.
-Student InformationStudent Name: Shivendra Singh Registration Number: 24BCE10430 Course: Open Source Software
-Unit Coverage: 1-5
-Institution: VITyarthi / VIT Bhopal 
-Project Overview: 
-The "Open Source Audit" is a comprehensive study of the philosophical, legal, and technical foundations of open-source software. This repository hosts the five required shell scripts that demonstrate core Linux concepts and their alignment with the philosophy of transparency and automation.
-Repository Structure 
-oss-audit-24BCE10430/ 
-script1.sh: System Identity Report 
-script2.sh: FOSS Package Inspector script3.sh: Disk and Permission Auditor script4.sh: Log File Analyzer script5.sh: Open Source Manifesto Generator
-README.md: Project documentation and instructions Script Descriptions & UsageScript 1:
-System Identity ReportDescription: Displays a welcome screen featuring the Linux distribution, kernel version, current user, system uptime, and the OS license.
-Concepts Used: Variables, command substitution $(), and basic output formatting.How to Run: bash script1.shScript 2: FOSS Package InspectorDescription: Checks if the chosen software is installed, finds its version, and uses a case statement to print a description of its purpose.Concepts Used: if-then-else, case statement, rpm or dpkg, and pipes with grep.How to Run: bash script2.shScript 3:
-Disk and Permission AuditorDescription: Loops through important system directories to report space usage, ownership, and permissions.Concepts Used: for loop, df, ls -ld, and awk or cut to extract fields.How to Run: bash script3.shScript 4: Log File AnalyzerDescription: Reads a log file line by line, counts occurrences of a keyword (like ERROR), and prints a summary.Concepts Used: while-read loop, if-then, counter variables, and command-line arguments.How to Run: ./script4.sh /var/log/messages [keyword] Script 5: Open Source Manifesto GeneratorDescription: An interactive script that asks three questions about open-source philosophy and generates a personalized .txt manifesto.Concepts Used: read for user input, string concatenation, and file redirection >.How to Run: bash script5.shTechnical RequirementsEnvironment: A real Linux system (VM or lab system).Permissions: Ensure scripts have execute permissions (chmod +x script_name.sh).Dependencies: Standard Bash shell and core utilities like grep, awk, and uptime.Academic IntegrityEvery line of code and written analysis in the accompanying report reflects original thinking. Scripts are documented with comments explaining each section as required by the course rubric.
+# OSS Audit: 24BCE10430
+
+[cite_start]This repository contains the practical shell scripting component for the **Open Source Software (OSS) Capstone Project** for the OSS NGMC Course[cite: 4, 5]. [cite_start]This audit explores the philosophical, legal, and technical foundations of open-source software[cite: 13, 15].
+
+## Student Information
+* **Name:** Shivendra Singh
+* **Registration Number:** 24BCE10430
+* [cite_start]**Course:** Open Source Software (Units 1-5) [cite: 5]
+* [cite_start]**Software Audited:** [Insert your chosen software here, e.g., MySQL or Python] [cite: 21, 26]
+
+---
+
+## Repository Structure
+[cite_start]The repository includes five functional shell scripts, each demonstrating specific Linux command-line and automation concepts required for the assignment[cite: 89, 90].
+
+| Script | Title | Description | Concepts Used |
+| :--- | :--- | :--- | :--- |
+| `script1.sh` | **System Identity** | [cite_start]Displays distribution, kernel version, user, uptime, and OS license[cite: 94, 95, 98]. | [cite_start]Variables, `$()`, echo[cite: 99]. |
+| `script2.sh` | **Package Inspector** | [cite_start]Checks installation status and prints a philosophy note using case statements[cite: 125, 126]. | [cite_start]`if-then-else`, `case`, `grep`[cite: 128]. |
+| `script3.sh` | **Disk & Permission Auditor** | [cite_start]Loops through system directories to report size, owner, and permissions[cite: 145, 146, 147]. | [cite_start]`for` loop, `df`, `ls -ld`, `awk`[cite: 148]. |
+| `script4.sh` | **Log File Analyzer** | [cite_start]Scans log files line-by-line to count specific keywords like "ERROR"[cite: 163, 164]. | [cite_start]`while-read` loop, counters, `$1`[cite: 165, 166]. |
+| `script5.sh` | **Manifesto Generator** | [cite_start]Interactive script that saves a personalized OSS philosophy to a `.txt` file[cite: 185, 186]. | [cite_start]`read`, concatenation, `>`[cite: 188]. |
+
+---
+
+## Instructions to Run
+
+### 1. Prerequisites
+* [cite_start]A real Linux system (VM, lab system, or physical machine)[cite: 92].
+* [cite_start]Standard Bash shell environment[cite: 234].
+
+### 2. Execution
+Ensure the scripts have execution permissions before running:
+
+```bash
+# Grant execution permissions
+chmod +x *.sh
+
+# Example: Run Script 1
+./script1.sh
+
+# Example: Run Script 4 (Requires a log file path as an argument)
+./script4.sh /var/log/messages
