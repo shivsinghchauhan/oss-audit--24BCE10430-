@@ -1,0 +1,11 @@
+----------------------------------------
+ Open Source Manifesto
+----------------------------------------
+Date: 31 March 2026
+User: shivendrasingh
+
+I use Git as my primary tool.
+For me, freedom means: Ability to learn and modify code.
+In the future, I want to build: Useful software for people.
+
+I believe in open-source and sharing knowledge.

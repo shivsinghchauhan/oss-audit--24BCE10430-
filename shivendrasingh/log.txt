@@ -1,0 +1,6 @@
+System started
+Error: file missing
+User login success
+error: connection failed
+Warning: low memory
+Error: disk issue
